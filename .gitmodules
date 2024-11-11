@@ -1,0 +1,6 @@
+[submodule "example3/globals"]
+	path = example3/globals
+	url = git@github.com:ncrescenzio/globals.git
+[submodule "example3/linear_algebra"]
+	path = example3/linear_algebra
+	url = git@github.com:ncrescenzio/linear_algebra.git
