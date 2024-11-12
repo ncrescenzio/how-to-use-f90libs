@@ -4,6 +4,7 @@ program main
    use globals
    use Norms
    use SimpleMatrix
+   use Geometry2d
 
    use, intrinsic :: iso_fortran_env, only : &
       stdin  => input_unit, &
@@ -17,6 +18,7 @@ program main
    integer :: nvec, stato, i, nrows
    real(kind=double), dimension(:), allocatable :: vec
    type(diagmat) :: dmatrix
+   type(star) :: meshstar
 
    nvec = 3
    allocate(vec(nvec),stat=stato)
@@ -40,5 +42,9 @@ program main
 
 
    call dmatrix%write(stdout)
+
+   call meshstar%init(stderr,10)
+   call meshstar%info(stdout)
+
 
 end program main

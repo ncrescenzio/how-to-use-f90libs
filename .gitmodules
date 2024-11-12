@@ -4,3 +4,6 @@
 [submodule "example3/linear_algebra"]
 	path = example3/linear_algebra
 	url = git@github.com:ncrescenzio/linear_algebra.git
+[submodule "example3/geometry"]
+	path = example3/geometry
+	url = git@github.com:ncrescenzio/geometry.git
