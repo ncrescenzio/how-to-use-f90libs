@@ -14,16 +14,23 @@ FetchContent_MakeAvailable(globals)
 FetchContent_Declare(
   linear_algebra
   GIT_REPOSITORY https://github.com/ncrescenzio/linear_algebra.git
-  GIT_TAG        d671546285a5860530f9fd70c76fbc5463c04917
+  GIT_TAG        865b6674b49b0f953a2243a8820aad983b497474
 )
 FetchContent_MakeAvailable(linear_algebra)
 
 FetchContent_Declare(
   geometry
   GIT_REPOSITORY https://github.com/ncrescenzio/geometry.git
-  GIT_TAG        8b5ab3d5916956c81382e7fa7efa7ee737b1bf16
+  GIT_TAG        82c46e6d725c0209c512f5b353f9829dc7d67f83
 )
 FetchContent_MakeAvailable(geometry)
 
+FetchContent_Declare(
+  p1galerkin
+  GIT_REPOSITORY https://github.com/ncrescenzio/p1galerkin.git
+  GIT_TAG        15f5f8d591e60a0ff78c869b9b71d38b3003c325
+)
+FetchContent_MakeAvailable(p1galerkin)
+
 add_executable(main main.f90)
-target_link_libraries(main PRIVATE globals linalg geometry)
+target_link_libraries(main PRIVATE globals linalg geometry p1galerkin)

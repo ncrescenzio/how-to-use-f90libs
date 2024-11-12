@@ -7,3 +7,6 @@
 [submodule "example3/geometry"]
 	path = example3/geometry
 	url = git@github.com:ncrescenzio/geometry.git
+[submodule "example3/p1galerkin"]
+	path = example3/p1galerkin
+	url = git@github.com:ncrescenzio/p1galerkin.git
